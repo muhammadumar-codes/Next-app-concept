@@ -1,18 +1,24 @@
 import './globals.css'
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer.jsx'
+import { Poppins } from 'next/font/google'
+import Header from '@/components/Header/Header'
+// Load the font
+const poppins = Poppins({
+  subsets: ['Fancy'],
+  weight: ['400', '500', '600', '700'],
+})
 
 export const metadata = {
-  title: 'Digital Clock App',
-  description: 'A simple time tracking and management app by Muhammad Umar',
+  title: 'My Next.js App',
+  description: 'A simple Next.js application with a custom layout.',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <main>{children}</main>
-      </body>
-    </html>
+    <>
+      <Header />
+      <html lang="en">
+        <body className={poppins.className}>{children}</body>
+      </html>
+    </>
   )
 }

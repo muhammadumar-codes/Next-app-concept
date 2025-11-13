@@ -900,7 +900,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/postcss@npm:^4":
+"@tailwindcss/postcss@npm:^4.1.17":
   version: 4.1.17
   resolution: "@tailwindcss/postcss@npm:4.1.17"
   dependencies:
@@ -910,6 +910,19 @@ __metadata:
     postcss: "npm:^8.4.41"
     tailwindcss: "npm:4.1.17"
   checksum: 10c0/76094f601aadd556aad59ad13613b22b9edfda5d8fdc0724a79b8331b27dbac121c0d33b5b65f94468c01290c58f261dd1d8553dde0d261cd4d18b6110aa2242
+  languageName: node
+  linkType: hard
+
+"@tailwindcss/vite@npm:^4.1.17":
+  version: 4.1.17
+  resolution: "@tailwindcss/vite@npm:4.1.17"
+  dependencies:
+    "@tailwindcss/node": "npm:4.1.17"
+    "@tailwindcss/oxide": "npm:4.1.17"
+    tailwindcss: "npm:4.1.17"
+  peerDependencies:
+    vite: ^5.2.0 || ^6 || ^7
+  checksum: 10c0/47d9bdfb7bf7d2df0661b50e91656779863146cca97571e21e2c3f9351f468c27cbc7ed1d1d6c373f1e721dca66d32a3f12f77e9d3e74bed344e27afec199ad3
   languageName: node
   linkType: hard
 
@@ -3172,14 +3185,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "my-next-app@workspace:."
   dependencies:
-    "@tailwindcss/postcss": "npm:^4"
+    "@tailwindcss/postcss": "npm:^4.1.17"
+    "@tailwindcss/vite": "npm:^4.1.17"
     babel-plugin-react-compiler: "npm:1.0.0"
     eslint: "npm:^9"
     eslint-config-next: "npm:16.0.1"
     next: "npm:16.0.1"
+    postcss: "npm:^8.5.6"
     react: "npm:19.2.0"
     react-dom: "npm:19.2.0"
-    tailwindcss: "npm:^4"
+    tailwindcss: "npm:^4.1.17"
   languageName: unknown
   linkType: soft
 
@@ -3468,7 +3483,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.41":
+"postcss@npm:^8.4.41, postcss@npm:^8.5.6":
   version: 8.5.6
   resolution: "postcss@npm:8.5.6"
   dependencies:
@@ -4042,7 +4057,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.1.17, tailwindcss@npm:^4":
+"tailwindcss@npm:4.1.17, tailwindcss@npm:^4.1.17":
   version: 4.1.17
   resolution: "tailwindcss@npm:4.1.17"
   checksum: 10c0/1fecf618ba9895e068e5a6d842b978f56a815bc849a28338cebbcb07b13df763715c2f8848def938403c73d59f08ffff33a4b83a977a9e38fa56adc60d1d56c8
