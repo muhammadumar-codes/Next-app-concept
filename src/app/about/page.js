@@ -1,9 +1,8 @@
 export default function About() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-12 bg-gray-100">
-      <h1 className="bg-amber-300 py-2">About Us</h1>
-      <p>Welcome to the About page of our Next.js application!</p>
-      <p>Welcome to the About page of our Next.js application!</p>
+    <div className="flex  flex-col items-center justify-center min-h-screen bg-gray-100">
+      <h1 className="text-3xl font-bold">Hello world!</h1>
+      <p>This text uses your custom MyFont automatically.</p>
     </div>
   )
 }

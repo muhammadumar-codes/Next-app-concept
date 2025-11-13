@@ -5,15 +5,12 @@ import Button from '../Button/Button'
 
 export default function Header() {
   return (
-    <header className="bg-blue-600 text-white sticky top-0 z-50 shadow-md">
+    <header className="bg-gradient-to-r from-blue-700 to-indigo-600 text-white sticky top-0 z-50 shadow-md">
       <div className="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto">
         {/* ==== Left Section: Logo + Nav ==== */}
         <div className="flex items-center gap-8">
           {/* Logo */}
-          <Link
-            href="/"
-            className="text-xl font-bold tracking-wide hover:text-yellow-300"
-          >
+          <Link href="/" className="">
             Muhammad Umar
           </Link>
 
@@ -64,7 +61,7 @@ export default function Header() {
           </form>
 
           {/* Logout Button */}
-          <Button className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-4 py-1.5 rounded-md text-sm">
+          <Button className="bg-gradient-to-r from-rose-400 to-red-500 text-white hover:bg-yellow-300 text-black font-semibold px-4 py-1.5 rounded-md text-sm">
             Log out
           </Button>
         </div>
