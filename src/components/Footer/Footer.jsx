@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-r from-blue-700 to-indigo-600 text-white">
-      <div  className="flex justify-around text-center py-1.5">
+      <div  className="grid grid-cols-3 gap-8 p-8 text-sm text-center">
         
       
         {/* About Section */}
